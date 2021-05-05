@@ -23,6 +23,36 @@ namespace TMCVisualizer
         public MainWindow()
         {
             InitializeComponent();
+
+            this.Loaded += Handle_MainWindow_Loaded;
+        }
+
+        private void Handle_MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.KeyUp += new KeyEventHandler(Handle_MainWindow_KeyUp);
+        }
+
+        private void Handle_MainWindow_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                // Do something
+                var result = MessageBox.Show("Quit?", "Quit TMCVisualizer?", MessageBoxButton.YesNo);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    Close();
+                }
+            }
+            else if (e.Key == Key.O)
+            {
+                Microsoft.Win32.OpenFileDialog openDialog = new Microsoft.Win32.OpenFileDialog();
+                openDialog.Filter = "(*.mp3)|*.mp3";
+                if (openDialog.ShowDialog() == true)
+                {
+                    NAudioEngine.Instance.OpenFile(openDialog.FileName);
+                }
+            }
         }
     }
 }
