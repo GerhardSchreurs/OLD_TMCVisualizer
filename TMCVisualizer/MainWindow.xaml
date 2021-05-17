@@ -3,10 +3,66 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:svl="clr-namespace:WPFSoundVisualizationLib;assembly=WPFSoundVisualizationLib"
         xmlns:local="clr-namespace:TMCVisualizer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" WindowStyle="None">
     <Grid>
-        
+        <Grid IsEnabled="False" Margin="0"
+>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+
+            <Rectangle x:Name="boxBackground"></Rectangle>
+
+            <svl:SpectrumAnalyzer x:Name="spectrumAnalyzer" IsEnabled="False" 
+                                  BarCount="64" Margin="0" />
+
+            <svl:WaveformTimeline x:Name="waveformTimeline"
+                                  Margin="0"
+                                  BorderThickness="0" />
+
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="500" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="1" TextWrapping="Wrap"  Foreground="White">
+           <LineBreak/>  various samples from:<LineBreak/><LineBreak/>  thunderbass%explizit<LineBreak/>  dynamix%destiny<LineBreak/>  heretic%destiny<LineBreak/>  keith3o3%rr%destiny<LineBreak/>  mayday%live%on%mars<LineBreak/>  bambambam%westbam<LineBreak/>  drumpack%various<LineBreak/>  starwash%remix%ep<LineBreak/><LineBreak/><LineBreak/>  f4%for%more%inpho<LineBreak/><LineBreak/>  shiftf9%for%message<LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/>      copyright%1996<LineBreak/>      phonkie%explizit<LineBreak/>      def%dance%music<LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/>eenkoeisgeenpaardebloem!!<LineBreak/>
+
+            </TextBlock>
+            <TextBlock Grid.Column="2"  TextWrapping="Wrap"  Foreground="White">
+                loop,talla2xlc@phonkie
+voice,talla2xlc/@phonkie
+boom,talla2xlc/@phonkie
+rimshot/@keith3o3
+acid,cutoff/@tb3o3
+reverse,cymbal@unknown
+
+steve,pd,acid1/@dynamix
+westbam,voice1/@phonkie
+westbam,voice2/@phonkie
+
+crash/@tr9o9
+filter,flange/@heretic
+strings,pad/@thunderbass
+snare/@tr8o8
+lion,starwash/@phonkie
+hotpants,break/@dynamix
+
+            </TextBlock>
+            <TextBlock Grid.Column="3"  TextWrapping="Wrap" Foreground="White">
+<LineBreak/>               <LineBreak/>                        .is anybody outthere?.<LineBreak/><LineBreak/><LineBreak/>                           live%on%mars%edit<LineBreak/><LineBreak/>                     <LineBreak/>              sum info: breakbeat%15obpm%17chnls%3.45mins<LineBreak/><LineBreak/><LineBreak/><LineBreak/>                  dedicated to my fellow explizit dewds<LineBreak/>                    we will visit mayday next year!!<LineBreak/>                feel mayday xi with talla2xlc en phonkie.<LineBreak/><LineBreak/><LineBreak/><LineBreak/>      Hellowz!<LineBreak/><LineBreak/>      Slam, hit you with a khewl mayday track in yer face! I don't<LineBreak/>      care about that dumb thing with legend, enjoy this one. And if<LineBreak/>      you didn't leech this due that issue, then you're ignorant and<LineBreak/>      dumb!<LineBreak/><LineBreak/>      Well kom'ah, what do you think? Do i repeat myself creating<LineBreak/>      the same sort of tracks every time? Doh! You guys, gimme some<LineBreak/>      feedback 'bout this song if you please: phoncie@explizit.org<LineBreak/>      Don't come moaning about Traxweekly...<LineBreak/><LineBreak/>      Mega greetz coming up...sometimes with comment...hehe<LineBreak/><LineBreak/>      ch:ilm - doh! but in beep's compo you can bee beep!!<LineBreak/>      mekx - mega funky, dead this week or high phonebill? :)<LineBreak/>      jay - wadda ya think?<LineBreak/>      thunderbass - slem, fuck keekloop! koebaas 4ever! yeah...<LineBreak/>      komah - ehjz, paddo-garden, ya have one?<LineBreak/>      armadon - napalm bom, definately dewd!<LineBreak/>      probe - oeh yeah give some more bonzai slcompo kinda stuff...<LineBreak/>      sturm - dead?<LineBreak/>      dirtbag - bambam you're little bro is dead! :)<LineBreak/>      gloomy - whaha mit! nice photo's, nice dog! whahhahaa<LineBreak/>      lightwing - good luck with those exams pall!<LineBreak/>      calimero - appreciate you're work dewd!<LineBreak/>      falcon - hahahaha i'll shoot you 28dec 2gether with gl!<LineBreak/><LineBreak/>      prance%neophite%morphine%blowbrain%rbi%dtn%tf%ufa%mecc%tom%xpo%you!<LineBreak/><LineBreak/><LineBreak/>      Woz, that's about it. Hi and Bye to the email-listers; getting<LineBreak/>      an email with a 7ookb every time sucks ehjz? Well, enjoy it...<LineBreak/><LineBreak/>      click<LineBreak/>      runtime error 0F8A:1110<LineBreak/>      click<LineBreak/><LineBreak/>      Woz, what the fuck...out of here...byebye,<LineBreak/><LineBreak/><LineBreak/><LineBreak/>                                                      phonkie%explizit
+            </TextBlock>
+        </Grid>
     </Grid>
 </Window>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMCVisualizer", "TMCVisuali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSoundVisualizationLib", "WPFSoundVisualizationLibrary\WPFSoundVisualizationLib.csproj", "{90F96222-1C39-4A19-ABE8-1B00FB330985}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMikNAudio", "SharpMik\SharpMikNAudio.csproj", "{95FC7357-E061-4611-A674-98D0499DC202}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{90F96222-1C39-4A19-ABE8-1B00FB330985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F96222-1C39-4A19-ABE8-1B00FB330985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F96222-1C39-4A19-ABE8-1B00FB330985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FC7357-E061-4611-A674-98D0499DC202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FC7357-E061-4611-A674-98D0499DC202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FC7357-E061-4611-A674-98D0499DC202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FC7357-E061-4611-A674-98D0499DC202}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

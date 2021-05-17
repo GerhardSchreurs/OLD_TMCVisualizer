@@ -912,7 +912,7 @@ namespace WPFSoundVisualizationLib
         /// </summary>
         public SpectrumAnalyzer()
         {
-            animationTimer = new DispatcherTimer(DispatcherPriority.ApplicationIdle)
+            animationTimer = new DispatcherTimer(DispatcherPriority.Render)
             {
                 Interval = TimeSpan.FromMilliseconds(defaultUpdateInterval),
             };

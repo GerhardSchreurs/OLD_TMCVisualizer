@@ -77,7 +77,7 @@ namespace WPFSoundVisualizationLib
         /// <summary>
         /// Identifies the <see cref="LeftLevelBrush" /> dependency property. 
         /// </summary>
-        public static readonly DependencyProperty LeftLevelBrushProperty = DependencyProperty.Register("LeftLevelBrush", typeof(Brush), typeof(WaveformTimeline), new UIPropertyMetadata(new SolidColorBrush(Colors.Blue), OnLeftLevelBrushChanged, OnCoerceLeftLevelBrush));
+        public static readonly DependencyProperty LeftLevelBrushProperty = DependencyProperty.Register("LeftLevelBrush", typeof(Brush), typeof(WaveformTimeline), new UIPropertyMetadata(new SolidColorBrush(Colors.White), OnLeftLevelBrushChanged, OnCoerceLeftLevelBrush));
 
         private static object OnCoerceLeftLevelBrush(DependencyObject o, object value)
         {
@@ -138,7 +138,7 @@ namespace WPFSoundVisualizationLib
         /// <summary>
         /// Identifies the <see cref="RightLevelBrush" /> dependency property. 
         /// </summary>
-        public static readonly DependencyProperty RightLevelBrushProperty = DependencyProperty.Register("RightLevelBrush", typeof(Brush), typeof(WaveformTimeline), new UIPropertyMetadata(new SolidColorBrush(Colors.Red), OnRightLevelBrushChanged, OnCoerceRightLevelBrush));
+        public static readonly DependencyProperty RightLevelBrushProperty = DependencyProperty.Register("RightLevelBrush", typeof(Brush), typeof(WaveformTimeline), new UIPropertyMetadata(new SolidColorBrush(Colors.White), OnRightLevelBrushChanged, OnCoerceRightLevelBrush));
 
         private static object OnCoerceRightLevelBrush(DependencyObject o, object value)
         {

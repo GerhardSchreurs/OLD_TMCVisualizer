@@ -109,6 +109,10 @@
     <Content Include="taglib-sharp.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SharpMik\SharpMikNAudio.csproj">
+      <Project>{95fc7357-e061-4611-a674-98d0499dc202}</Project>
+      <Name>SharpMikNAudio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WPFSoundVisualizationLibrary\WPFSoundVisualizationLib.csproj">
       <Project>{90f96222-1c39-4a19-abe8-1b00fb330985}</Project>
       <Name>WPFSoundVisualizationLib</Name>
